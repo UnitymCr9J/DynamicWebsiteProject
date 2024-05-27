@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Galerija</title>
+	<meta charset="utf-8"  />
+<link href="galerija.css" rel="stylesheet" type="text/css">
+<script type="application/javascript">
+function otvoriPregled() {
+  document.getElementById('pregledSlika').style.display = "block";
+}
+
+function zatvoriPregled() {
+  document.getElementById('pregledSlika').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlajd(n) {
+  showSlides(slideIndex += n);
+}
+
+function trenutniSlajd(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("Slajd");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1 class="logo">Pancakeland</h1>
+		</div>
+		<div id="navbar">
+			<div class="menu">
+			<a href="pancakeland.html">Početna</a>
+			</div>
+			<div class="menu">
+			<p>Proizvodi</p>
+				<ul>
+					<li><a href="slatke_palacinke.html">Slatke palačinke</a></li>
+					<li><a href="slane_palacinke.html">Slane palačinke</a></li>
+					<li><a href="zapecene_palacinke.html">Zapečene palačinke</a></li>
+				</ul>
+			</div>
+			<div class="menu">
+			<a href="galerija.html">Galerija</a>
+			</div>
+			<div class="menu">
+			<a href="opcenito.html">O nama</a>
+			</div>
+		</div>
+		<div id="left">
+		</div>
+		<div id="content">
+					<h1 id="naslov">Galerija palačinki</h1>
+			<div class="row">
+				<div class="column">
+						<img src="Palacinke/palacinka1.jpg" alt="Prva palačinka" onclick="otvoriPregled();trenutniSlajd(1)" class="hover-shadow">
+				</div>
+				<div class="column">
+						<img src="Palacinke/palacinka2.jpg" alt="Druga palačinka" onclick="otvoriPregled();trenutniSlajd(2)" class="hover-shadow">
+				</div>
+				<div class="column">
+						<img src="Palacinke/palacinka3.jpg" alt="Treća palačinka" onclick="otvoriPregled();trenutniSlajd(3)" class="hover-shadow">
+				</div>
+				<div class="column">
+						<img src="Palacinke/palacinka4.jpg" alt="Četvrta palačinka" onclick="otvoriPregled();trenutniSlajd(4)" class="hover-shadow">
+				</div>
+			</div>
+				
+			<div id="pregledSlika" class="pregled">
+				<span class="close cursor" onclick="zatvoriPregled()">&times;</span>
+			<div class="pregled-content">
+			
+			<div class="Slajd">
+				<div class="broj">1 / 4</div>
+				<img src="Palacinke/palacinka1.jpg" alt="Prva slika">
+			</div>
+
+			<div class="Slajd">
+				<div class="broj">2 / 4</div>
+				<img src="Palacinke/palacinka2.jpg" alt="Druga slika">
+			</div>
+
+			<div class="Slajd">
+				<div class="broj">3 / 4</div>
+				<img src="Palacinke/palacinka3.jpg" alt="Treća slika">
+			</div>
+
+			<div class="Slajd">
+				<div class="broj">4 / 4</div>
+				<img src="Palacinke/palacinka4.jpg" alt="Četvrta slika">
+			</div>
+			<a class="prev" onclick="plusSlajd(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlajd(1)">&#10095;</a>
+			</div>
+			</div>	
+		</div>
+		<div id="right">
+		</div>
+		<div id="footer">
+			<p>Slastičarnica Pancakeland, Zagreb, Zelinska 7, Tel. +385 01 560-65-25; pancakeland@1345<p>
+			<p>&copy; Slastičarnica Pancakeland<p>
+		</div>
+	</div>
+</body>
+</html>

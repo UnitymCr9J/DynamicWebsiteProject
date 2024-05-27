@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>O nama</title>
+	<meta charset="utf-8"  />
+<link href="opcenito.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+      function initMap() {
+        var uluru = {lat: 45.800872, lng: 15.972153};
+        var map = new google.maps.Map(document.getElementById('lokacija'), {
+          zoom: 17,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru, 
+          map: map
+        });
+      }
+    </script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_NnJDd3KOR_q3c9v2D979IFET4IbGiX8&callback=initMap">
+</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1 class="logo">Pancakeland</h1>
+		</div>
+		<div id="navbar">
+			<div class="menu">
+			<a href="pancakeland.html">Početna</a>
+			</div>
+			<div class="menu">
+			<p>Proizvodi</p>
+				<ul>
+					<li><a href="slatke_palacinke.html">Slatke palačinke</a></li>
+					<li><a href="slane_palacinke.html">Slane palačinke</a></li>
+					<li><a href="zapecene_palacinke.html">Zapečene palačinke</a></li>
+				</ul>
+			</div>
+			<div class="menu">
+			<a href="galerija.html">Galerija</a>
+			</div>
+			<div class="menu">
+			<a href="opcenito.html">O nama</a>
+			</div>
+		</div>
+		<div id="left">
+		</div>
+		<div id="content">
+			<h2>Adresa</h2>
+			<p>Zelinska 7, 10 000 Zagreb</p>
+			<h2>Lokacija</h2>
+				<div id="lokacija"></div>
+			<h2>Radno vrijeme:</h2>
+			<p>09:00 - 22:00</p>
+			<h2>Telefon</h2>
+			<p>01/560-65-25</p>
+			<h2>e-mail:</h2>
+			<p>pancakeland@hotmail.com</p>
+		</div>
+		<div id="right">
+		</div>
+		<div id="footer">
+			<p>Slastičarnica Pancakeland, Zagreb, Zelinska 7, Tel. +385 01 560-65-25; pancakeland@1345<p>
+			<p>&copy; Slastičarnica Pancakeland<p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+body{
+	margin: 0px;
+}
+#wrapper{
+	width: 1349px;
+	height: 1349px;
+	margin: 0px;
+}
+#header{
+	width: 1349px;
+	height: 175px;
+	margin: 0px;
+}
+.logo{
+	width: 1349px;
+	height: 100px;
+	margin: 0px;
+	padding-top: 75px;
+	position: relative;
+	font-family: "monotype corsiva";
+	color: white;
+	background-color: black;
+	text-align: center;
+}
+#navbar{
+	width: 1349px;
+	height: 40px;
+	margin: 0px;
+	float: left;
+	background-color: #ff8c1a;
+}
+#navbar a{
+	margin: 0px;
+	color: black;
+	font-family: "monotype corsiva";
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+	background-color: #ff8c1a;
+}
+#navbar ul li{
+	margin: 0px;
+	color: black;
+	font-family: "monotype corsiva";
+	border: 1px solid black;
+}
+.menu{
+	width: 150px;
+	height: 100px;
+	margin: 0px;
+	position: relative;
+	float: left;
+	padding-top: 25px;
+	padding-left: 150px;
+	text-align: center;
+}
+.menu ul{
+	visibility: hidden;
+	list-style: none;
+}
+.menu:hover ul{
+	visibility: visible;
+	width: 150px;
+	margin: 0px;
+	padding-left: 0px;
+	list-style: none;
+	border: 1px solid transparent;
+	background-color: #ff8c1a;
+}
+.menu:hover ul li{
+	text-align: center;
+	font-size: 17px;
+}
+.menu p{
+	margin: 0px;
+	color: black;
+	font-family: "monotype corsiva";
+	font-weight: bold;
+	font-size: 20px;
+	background-color: #ff8c1a;
+}
+#left{
+	width: 300px;
+	height: 1349px;
+	margin: 0px;
+	background-color: #ff8c1a;
+	float: left;
+}
+#content{
+	width: 1000px;
+	height: 1349px;
+	margin: 0px;
+	background-color: #ff8c1a;
+	float: left;
+}
+#content h2{
+	width: 200px;
+	height: 60px;
+	padding-top: 40px;
+	padding-left: 240px;
+	padding-bottom: 30px;
+	font-size: 25px;
+	font-family: "monotype corsiva";
+	text-align: center;
+}
+#content p{
+	width: 200px;
+	height: 40px;
+	padding-left: 240px;
+	font-size: 20px;
+	font-family: "monotype corsiva";
+	text-align: center;
+}
+#lokacija{
+	width: 400px;
+	height: 300px;
+	margin-left: 145px;
+}
+#right{
+	width: 49px;
+	height: 1349px;
+	margin: 0px;
+	background-color: #ff8c1a;
+	float: left;
+}
+#footer{
+	width: 1349px;
+	height: 120px;
+	margin: 0px;
+	background-color: black;
+	float: left;
+}
+#footer p{
+	margin: 0px;
+	padding-left: 100px; 
+	padding-top: 50px;
+	font-family: "monotype corsiva";
+	font-size: 20px;
+	color: white;
+	float: left;
+}
